@@ -94,7 +94,8 @@ When they diverge, GitHub wins.
 
 When working in this repo:
 
-1. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
+1. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
+2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
 2. **Respect the tone guidelines** above in all content you create or edit.
 3. **Keep CLAUDE.md templates under 300 lines.** Use progressive disclosure.
 4. **Do not create measurement or scoring content here.** That belongs in `cbu-coe-toolkit`.
