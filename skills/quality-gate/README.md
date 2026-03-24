@@ -108,6 +108,18 @@ This is not peer review. It is the same model with the same blind spots. It
 will not catch hallucinations or replace domain expertise. It adds a few
 seconds per task. The trade-off is worth it for anything non-trivial.
 
+## What This Is Not
+
+This skill is **forced iteration**, not independent quality assurance. The
+same model evaluating its own output shares the same biases and blind spots.
+It will not catch structural flaws, hallucinations, or domain-specific errors
+that the model doesn't know it's making.
+
+For those, you need domain-specific process checks (role-specific templates,
+hooks that enforce structure during work, human review). This skill is one
+layer in a multi-layer quality approach — the lightweight, zero-cost layer
+that consistently improves first-draft output.
+
 ---
 
 ## Session Hygiene
