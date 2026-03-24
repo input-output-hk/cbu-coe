@@ -1,9 +1,11 @@
-## What and why
+## Why
 
-<!--
-What changed and why? Keep it brief.
--->
+<!-- Why is this change needed? -->
 
-## Checklist
+## What value does it add
 
-- [ ] No secrets, tokens, or credentials included
+<!-- Who benefits and how? -->
+
+## How to verify
+
+<!-- How can the reviewer check this works as intended? -->
