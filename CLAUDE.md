@@ -96,7 +96,8 @@ When they diverge, GitHub wins.
 
 When working in this repo:
 
-1. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
+1. **Never commit directly to `main`.** Always create a feature branch, push it, and open a PR. Only Dorin (repo owner) merges PRs into `main` after review. No exceptions.
+2. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
 2. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
 2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
 2. **Respect the tone guidelines** above in all content you create or edit.
