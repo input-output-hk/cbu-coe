@@ -1,12 +1,13 @@
 ---
 name: quality-gate
 description: >
-  Quality gate that scores work before delivery on Correctness, Completeness,
-  Clarity, User Intent + domain-specific dimensions. Iterates to 9.0+
-  automatically. Use after completing any non-trivial task: code, documents,
-  architecture decisions, plans, analysis, QA artefacts. Use when task involves
-  implementation, creation, or design. Do NOT use for: simple questions,
-  explanations, lookups, single-line edits, typo fixes.
+  Forced iteration gate — scores work before delivery to surface improvements
+  the model knew about but did not apply on first pass. Not quality assurance
+  or independent review — same model, same blind spots. The value is in the
+  second pass, not the score itself. Use after completing any non-trivial task:
+  code, documents, architecture decisions, plans, analysis, QA artefacts.
+  Do NOT use for: simple questions, explanations, lookups, single-line edits,
+  typo fixes.
 ---
 
 # Quality Gate
