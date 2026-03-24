@@ -97,6 +97,7 @@ When they diverge, GitHub wins.
 When working in this repo:
 
 1. **Never commit directly to `main`.** Always create a feature branch, push it, and open a PR. Only Dorin (repo owner) merges PRs into `main` after review. No exceptions.
+2. **Never expose secrets.** Do not print, log, echo, commit, or include in any output: API keys, tokens, passwords, environment variable values, private keys, or credentials. Reference them by name only (e.g., `$GITHUB_TOKEN`), never by value.
 2. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
 2. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
 2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
