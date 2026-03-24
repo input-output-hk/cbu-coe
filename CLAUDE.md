@@ -17,6 +17,11 @@
 cbu-coe/
 ├── CLAUDE.md                         ← You are here
 ├── README.md                         # Human-readable overview
+├── CONTRIBUTING.md                   # How to contribute to this repo
+├── .github/
+│   ├── CODEOWNERS                    # Default reviewer: @dorin100
+│   ├── pull_request_template.md      # PR template with checklist
+│   └── ISSUE_TEMPLATE/               # Issue templates (suggestion, bug)
 ├── golden-paths/                     # Reusable materials — only what exists
 │   ├── ai-config/                    # CLAUDE.md / AGENTS.md templates
 │   │   ├── by-role/                  # Role-based starter templates (8 roles)
@@ -29,8 +34,7 @@ cbu-coe/
 └── docs/
     ├── decisions/                    # Architecture Decision Records (ADRs)
     │   └── NNN-title.md             # One file per decision (see 000-template.md)
-    ├── learnings.md                  # Append-only operational insights log
-    └── contributing.md               # How to contribute to this repo
+    └── learnings.md                  # Append-only operational insights log
 ```
 
 ## Knowledge Capture System
@@ -98,16 +102,16 @@ When working in this repo:
 
 1. **Never commit directly to `main`.** Always create a feature branch, push it, and open a PR. Only Dorin (repo owner) merges PRs into `main` after review. No exceptions.
 2. **Never expose secrets.** Do not print, log, echo, commit, or include in any output: API keys, tokens, passwords, environment variable values, private keys, or credentials. Reference them by name only (e.g., `$GITHUB_TOKEN`), never by value.
-2. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
-2. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
-2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
-2. **Respect the tone guidelines** above in all content you create or edit.
-3. **Keep CLAUDE.md templates under 300 lines.** Use progressive disclosure.
-4. **Do not create measurement or scoring content here.** That belongs in `cbu-coe-toolkit`.
-5. **Test any commands you include** in templates — they should work out of the box.
-6. **Propose changes via PR descriptions** that explain *why*, not just *what*.
-7. **Before every commit — check for secrets.** Scan for API keys, tokens, passwords, private keys, `.env` files, or any credentials. Run `git diff --cached` and review every line. Check `git status` for files that should not be tracked. No internal URLs with auth tokens, no personal data, no sensitive organizational context. If in doubt, ask before committing. A leaked secret is harder to fix than a delayed commit.
-8. **When unsure, ask.** The human operator reviews everything.
+3. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
+4. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
+5. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
+6. **Respect the tone guidelines** above in all content you create or edit.
+7. **Keep CLAUDE.md templates under 300 lines.** Use progressive disclosure.
+8. **Do not create measurement or scoring content here.** That belongs in `cbu-coe-toolkit`.
+9. **Test any commands you include** in templates — they should work out of the box.
+10. **Propose changes via PR descriptions** that explain *why*, not just *what*.
+11. **Before every commit — check for secrets.** Scan for API keys, tokens, passwords, private keys, `.env` files, or any credentials. Run `git diff --cached` and review every line. Check `git status` for files that should not be tracked. No internal URLs with auth tokens, no personal data, no sensitive organizational context. If in doubt, ask before committing. A leaked secret is harder to fix than a delayed commit.
+12. **When unsure, ask.** The human operator reviews everything.
 
 ### Before Ending Any Session
 
