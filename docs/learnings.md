@@ -12,7 +12,7 @@ Newest entries first. Each entry includes the date and a brief context tag.
 - **SKILL.md is Claude-facing only:** Human-facing content (install instructions, why it works, credits, session hygiene) wastes context tokens. Split into SKILL.md (Claude) + README.md (humans). Reduced quality-gate SKILL.md from ~188 lines to ~120 lines.
 - **Description field drives discovery:** Claude decides whether to load a skill based on the description alone. Must include: WHAT it does, WHEN to trigger (positive), WHEN NOT to trigger (negative). Vague descriptions like "universal gate for all work" cause unreliable activation.
 - **One example > ten paragraphs:** A concrete input/output example removes ambiguity that prose instructions leave open. Added scorecard example to quality-gate.
-- **Validate future skills against best practices:** Before creating or shipping any new skill, review `golden-paths/knowledge/skills-creation/best-practices.md` — includes checklist, anti-patterns, and sourced guidance from Anthropic and SmartScope.
+- **Validate future skills against best practices:** Before creating or shipping any new skill, review `docs/knowledge/skills-creation/best-practices.md` — includes checklist, anti-patterns, and sourced guidance from Anthropic and SmartScope.
 
 ---
 

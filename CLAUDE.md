@@ -18,11 +18,9 @@ cbu-coe/
 ├── CLAUDE.md                         ← You are here
 ├── README.md                         # Human-readable overview
 ├── golden-paths/                     # Reusable materials — only what exists
-│   ├── ai-config/                    # CLAUDE.md / AGENTS.md templates
-│   │   ├── by-role/                  # Role-based starter templates (8 roles)
-│   │   └── by-project/               # Project-specific overlays (4 projects)
-│   └── knowledge/                    # Research & best practices for CoE topics
-│       └── skills-creation/          # Claude Code skills authoring guide
+│   └── ai-config/                    # CLAUDE.md / AGENTS.md templates
+│       ├── by-role/                  # Role-based starter templates (8 roles)
+│       └── by-project/               # Project-specific overlays (4 projects)
 ├── skills/                           # Claude Code skills — CoE quality tools
 │   └── quality-gate/
 │       └── SKILL.md                  # Universal quality gate (self-score + iterate)
@@ -30,7 +28,8 @@ cbu-coe/
     ├── decisions/                    # Architecture Decision Records (ADRs)
     │   └── NNN-title.md             # One file per decision (see 000-template.md)
     ├── learnings.md                  # Append-only operational insights log
-    └── contributing.md               # How to contribute to this repo
+    └── knowledge/                    # Research & best practices for CoE topics
+        └── skills-creation/          # Claude Code skills authoring guide
 ```
 
 ## Knowledge Capture System
@@ -99,7 +98,7 @@ When working in this repo:
 1. **Never commit directly to `main`.** Always create a feature branch, push it, and open a PR. Only Dorin (repo owner) merges PRs into `main` after review. No exceptions.
 2. **Never expose secrets.** Do not print, log, echo, commit, or include in any output: API keys, tokens, passwords, environment variable values, private keys, or credentials. Reference them by name only (e.g., `$GITHUB_TOKEN`), never by value.
 2. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
-2. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
+2. **Skills validation** — before creating or modifying any skill, read `docs/knowledge/skills-creation/best-practices.md` and validate against its checklist.
 2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
 2. **Respect the tone guidelines** above in all content you create or edit.
 3. **Keep CLAUDE.md templates under 300 lines.** Use progressive disclosure.
