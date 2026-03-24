@@ -18,9 +18,11 @@ cbu-coe/
 ├── CLAUDE.md                         ← You are here
 ├── README.md                         # Human-readable overview
 ├── golden-paths/                     # Reusable materials — only what exists
-│   └── ai-config/                    # CLAUDE.md / AGENTS.md templates
-│       ├── by-role/                  # Role-based starter templates (8 roles)
-│       └── by-project/               # Project-specific overlays (4 projects)
+│   ├── ai-config/                    # CLAUDE.md / AGENTS.md templates
+│   │   ├── by-role/                  # Role-based starter templates (8 roles)
+│   │   └── by-project/               # Project-specific overlays (4 projects)
+│   └── knowledge/                    # Research & best practices for CoE topics
+│       └── skills-creation/          # Claude Code skills authoring guide
 ├── skills/                           # Claude Code skills — CoE quality tools
 │   └── quality-gate/
 │       └── SKILL.md                  # Universal quality gate (self-score + iterate)
@@ -95,6 +97,7 @@ When they diverge, GitHub wins.
 When working in this repo:
 
 1. **Quality gate** — invoke the `quality-gate` skill before declaring any task complete. Skip for questions, explanations, and simple lookups.
+2. **Skills validation** — before creating or modifying any skill, read `golden-paths/knowledge/skills-creation/best-practices.md` and validate against its checklist.
 2. **Start by reading `docs/learnings.md` and scanning `docs/decisions/`.** This is accumulated context from all previous sessions.
 2. **Respect the tone guidelines** above in all content you create or edit.
 3. **Keep CLAUDE.md templates under 300 lines.** Use progressive disclosure.
