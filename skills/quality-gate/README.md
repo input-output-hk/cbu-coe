@@ -11,21 +11,22 @@ plans, architecture decisions, and QA artefacts.
 ### Claude Code — personal (all your projects)
 
 ```bash
+mkdir -p ~/.claude/skills/quality-gate && \
 curl -fsSL https://raw.githubusercontent.com/input-output-hk/cbu-coe/main/skills/quality-gate/SKILL.md \
-  -o ~/.claude/commands/quality-gate.md
+  -o ~/.claude/skills/quality-gate/SKILL.md
 ```
 
-The skill becomes available as `/quality-gate` in every project on your machine.
+The skill becomes available in every project on your machine.
 
 ### Claude Code — repo-level (one project only)
 
 ```bash
-mkdir -p .claude/commands && \
+mkdir -p .claude/skills/quality-gate && \
 curl -fsSL https://raw.githubusercontent.com/input-output-hk/cbu-coe/main/skills/quality-gate/SKILL.md \
-  -o .claude/commands/quality-gate.md
+  -o .claude/skills/quality-gate/SKILL.md
 ```
 
-Commit `.claude/commands/quality-gate.md` so teammates get it automatically
+Commit `.claude/skills/quality-gate/SKILL.md` so teammates get it automatically
 when they clone the repo.
 
 ---
